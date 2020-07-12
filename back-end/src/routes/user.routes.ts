@@ -5,6 +5,7 @@ import UsuarioRepository from '../repositories/UserRepository';
 import CreateUserService from '../services/CreateUserService';
 import authentecadedUser from '../middlewares/authenticadedUser';
 import UpdatedUserService from '../services/UpdatedUserService';
+import DeleteUserService from '../services/DeleteUserService';
 
 const UserRouter = Router();
 
@@ -37,6 +38,18 @@ UserRouter.put('/', authentecadedUser, async (request, response) => {
   });
 
   delete user.password;
+  return response.json(user);
+});
+
+UserRouter.delete('/', authentecadedUser, async (request, response) => {
+  const { email, password } = request.body;
+  const deleteUser = new DeleteUserService();
+
+  const user = await deleteUser.execute({
+    email,
+    password,
+  });
+
   return response.json(user);
 });
 
