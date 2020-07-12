@@ -17,14 +17,6 @@ UserRouter.get('/', async (request, response) => {
 
 UserRouter.post('/', async (request, response) => {
   const { name, email, password } = request.body;
-  const usersRepository = getCustomRepository(UsuarioRepository);
-  const userExist = await usersRepository.findOne({
-    where: { email },
-  });
-
-  if (userExist) {
-    return response.json({ error: 'This email is already used!' });
-  }
 
   const createUser = new CreateUserService();
   const user = await createUser.execute({
