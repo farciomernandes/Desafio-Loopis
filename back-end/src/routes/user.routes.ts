@@ -42,13 +42,10 @@ UserRouter.put('/', authentecadedUser, async (request, response) => {
 });
 
 UserRouter.delete('/', authentecadedUser, async (request, response) => {
-  const { email, password } = request.body;
+  const { id } = request.body;
   const deleteUser = new DeleteUserService();
 
-  const user = await deleteUser.execute({
-    email,
-    password,
-  });
+  const user = await deleteUser.execute(id);
 
   return response.json(user);
 });
