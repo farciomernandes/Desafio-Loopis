@@ -27,13 +27,12 @@ UserRouter.post('/', async (request, response) => {
 });
 
 UserRouter.put('/', async (request, response) => {
-  const { name, email, id } = request.body;
+  const { name, email } = request.body;
 
   const updatedUser = new UpdatedUserService();
   const user = await updatedUser.execute({
     name,
     email,
-    id,
   });
   return response.json(user);
 });
@@ -41,7 +40,6 @@ UserRouter.put('/', async (request, response) => {
 UserRouter.delete('/', async (request, response) => {
   const { id } = request.body;
   const deleteUser = new DeleteUserService();
-
   await deleteUser.execute(id);
 
   return response.status(204).send();

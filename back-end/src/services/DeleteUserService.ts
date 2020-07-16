@@ -10,7 +10,6 @@ export default class DeleteUserService {
     if (!SearchUser) {
       throw new AppError('User not found! ');
     }
-
     await userRepository.remove(SearchUser);
   }
 }
