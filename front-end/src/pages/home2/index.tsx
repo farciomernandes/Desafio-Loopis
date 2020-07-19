@@ -35,6 +35,8 @@ const Home2: React.FC = () => {
   async function sortFriends() {
     if (users.length % 2 !== 0) {
       alert('O sorteio só pode acontecer com um número par de participantes!');
+    } else if (users.length < 3) {
+      alert('O amigo secreto só pode ocorrer com no mínimo 3 pessoas.');
     } else {
       try {
         history.push('/sorteio');
