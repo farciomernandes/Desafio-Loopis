@@ -2,7 +2,7 @@
 
 
 <p align="center">
-  <img src="./front-end/src/assets/home 1.png" align="center" width="60%"/>
+  <img src="./front-end/src/assets/home 1.jpg" align="center" width="60%"/>
 <br />
 Aplicação de sorteio de **Amigo Secreto Loopis** desenolvida com **Node.js + Express** no *back-end*, com **Potsgres** como banco de dados e **React.js** no *front-end*. Tudo isso em typescript.</p>
 
