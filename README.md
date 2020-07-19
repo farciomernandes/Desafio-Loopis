@@ -29,6 +29,9 @@ cd Desafio-Loopis
    2- yarn
 ```
 
+  <img src="./front-end/src/assets/home 2.jpg" align="center" width="60%"/>
+
+
 **4:** Assegure-se que o docker está instalado na sua máquina e crie um novo container.
 ```
   1- Caso não tenha instaldo realize o dowload através do link: https://docs.docker.com/docker-for-windows/install/
@@ -61,6 +64,8 @@ cd Desafio-Loopis
   1- Navege até o diretório do frontend e digite " yarn start ". Aguarde e seu projeto irá iniciar na rota 
   " http://localhost:300 ".
 ```
+
+  <img src="./front-end/src/assets/sorteado.jpg" align="center" width="60%"/>
 
 
 **Obrigado :D** 
