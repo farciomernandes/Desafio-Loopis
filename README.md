@@ -2,7 +2,7 @@
 
 
 <p align="center">
-  <img src="./front-end/src/assets/home 1.jpg" align="center" width="60%"/>
+  <img src="./front-end/src/assets/home 1.jpg" align="center" width="100%"/>
 <br />
 Aplicação de sorteio de **Amigo Secreto Loopis** desenolvida com **Node.js + Express** no *back-end*, com **Potsgres** como banco de dados e **React.js** no *front-end*. Tudo isso em typescript.</p>
 
@@ -29,7 +29,6 @@ cd Desafio-Loopis
    2- yarn
 ```
 
-  <img src="./front-end/src/assets/home 2.jpg" align="center" width="60%"/>
 
 
 **4:** Assegure-se que o docker está instalado na sua máquina e crie um novo container.
@@ -41,6 +40,8 @@ cd Desafio-Loopis
     2.1 Após rodar esse comando ele deve criar o container com a imagem mais rescente do postgres. 
     Para se certificar que tudo foi criado corretamente digite o comando: docker ps -a , e procure pelo nome amigooculto. Caso tenha encontrado digite docker start NOME_DO_CONTAINER.
 ```
+  <img src="./front-end/src/assets/home 2.jpg" align="center" width="100%"/>
+
 
 **5:** Crie  uma database com o nome " amigo_oculto " na porta 5432 com a senha " docker ".
 ```
@@ -62,10 +63,10 @@ cd Desafio-Loopis
 **7:** Inicie seu frontend.
 ```
   1- Navege até o diretório do frontend e digite " yarn start ". Aguarde e seu projeto irá iniciar na rota 
-  " http://localhost:300 ".
+  " http://localhost:3000 ".
 ```
 
-  <img src="./front-end/src/assets/sorteado.jpg" align="center" width="60%"/>
+  <img src="./front-end/src/assets/sorteado.jpg" align="center" width="100%"/>
 
 
 **Obrigado :D** 
