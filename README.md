@@ -22,12 +22,12 @@ cd Desafio-Loopis
 
 **3.1:** Instale as depedências do frontend.
 ```
-  1- cd frontend 
+  1- cd front-end 
    2- yarn
 ```
 **3.2:** Instale as depedências do frontend.
 ```
-   1- cd backend 
+   1- cd back-end 
    2- yarn
 ```
 
